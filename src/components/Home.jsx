@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setCards, setPage, setLoading } from "../store";
+import { setCards, setPage, setLoading } from "../features/card/cardSlice";
 import Loader from "./Loader";
 import CardsContainer from "./CardsContainer";
 import './Home.css'

@@ -8,6 +8,7 @@ This project implements an Infinite Scroll Gallery with Lazy Loading using Redux
 - Infinite scrolling to load more data as the user scrolls down the page.
 - Lazy loading to optimize performance by loading items only when they come into view.
 - Redux is used for managing the application state efficiently.
+- Responsive design for all screen sizes.
 
 ## Tech Stack:
 - React
@@ -43,3 +44,39 @@ This project implements an Infinite Scroll Gallery with Lazy Loading using Redux
     - Resources are loaded only when they are about to be displayed, reducing unnecessary loading time.
 - Redux for State Management:
     - The application state is managed using Redux, making it easier to manage the loading state, data, and other necessary app states.
+- Responsive Design:
+    - The layout adjusts dynamically to different screen sizes, ensuring a seamless experience on desktops, tablets, and mobile devices.
+
+## Folder Structure:
+
+InfiniteScrollGallery/
+├── node_modules/               
+├── public/                     
+├── src/                        
+│   ├── app/                    
+│   │   ├── store.js
+│   ├── assets/        
+│   ├── components/             
+│   │   ├── CardsContainer.css           
+│   │   ├── CardsContainer.jsx           
+│   │   ├── CommonCard.css           
+│   │   ├── CommonCard.jsx           
+│   │   ├── Home.css           
+│   │   ├── Home.jsx           
+│   │   ├── Loader.css           
+│   │   ├── Loader.jsx                    
+│   │   ├── SkeletonLoder.css           
+│   │   ├── SkeletonLoder.jsx                    
+│   ├── features/               
+│   │   ├── card/            
+│   │   │   ├── cardSlice.js             
+│   ├── App.css                 
+│   ├── App.jsx                 
+│   ├── index.css                
+│   ├── main.jsx                
+├── .gitignore                  
+├── index.html  
+├── package-lock.json                 
+├── package.json                
+├── vite.config.js              
+└── README.md                   

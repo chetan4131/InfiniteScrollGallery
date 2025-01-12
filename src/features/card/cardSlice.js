@@ -1,4 +1,4 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 // Initial state
 const initialState = {
   cards: [],
@@ -26,11 +26,4 @@ const cardSlice = createSlice({
 // Export actions
 export const { setCards, setPage, setLoading } = cardSlice.actions;
 
-// Configure store
-const store = configureStore({
-  reducer: {
-    cards: cardSlice.reducer,
-  },
-});
-
-export default store;
+export default cardSlice.reducer
